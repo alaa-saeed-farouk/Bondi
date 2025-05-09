@@ -1,0 +1,223 @@
+:root {
+  --dark: #19283f;
+  --green: #32d1cc;
+  --red: #fe3150;
+  --yellow: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Start NavBar */
+.navbar {
+  background-color: var(--dark);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--green) !important;
+}
+.navbar .search {
+  border-left: 1px solid var(--green);
+}
+.navbar .search svg {
+  color: var(--green);
+}
+.navbar-toggler {
+  font-size: 25px;
+}
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.main-btn {
+  background-color: var(--red) !important;
+  color: var(--yellow);
+}
+.main-btn:hover {
+  color: var(--yellow) !important;
+}
+.dropdown-menu {
+  min-width: auto !important;
+}
+.dropdown-toggle,
+.dropdown-menu {
+  background-color: var(--dark);
+  color: var(--yellow);
+}
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  background-color: var(--dark) !important;
+  color: var(--yellow) !important;
+}
+.dropdown-menu .dropdown-item {
+  color: var(--yellow);
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: var(--dark);
+}
+/* End NavBar */
+/* Start Landing */
+.landing {
+  min-height: calc(100vh - 72px);
+  background-color: var(--dark);
+}
+/* End Landing */
+/* Start Features */
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 2px;
+  background-color: var(--green);
+  left: 50%;
+  bottom: -20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icon-holder .icon {
+  color: var(--green);
+}
+.features .feat h4 {
+  color: var(--yellow);
+}
+/* End Features */
+/* Start Our Works */
+.our-works {
+  background-color: var(--section-color);
+}
+.our-works ul li.active {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+.our-works ul li {
+  cursor: pointer;
+}
+.our-works ul li:not(.active):hover {
+  color: var(--red);
+}
+.our-works .box {
+  padding: 5px;
+}
+.our-works .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(51, 209, 204, 0.76);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  -webkit-transform: translateX(calc(-100% - 5px));
+          transform: translateX(calc(-100% - 5px));
+}
+.our-works .box:hover::before {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+}
+/* End Our Works */
+/* Start About Us */
+.stuff .description {
+  max-width: 500px;
+}
+/* End About Us */
+/* Start our Team */
+.our-team {
+  background-color: var(--section-color);
+}
+.our-team h2 {
+  color: var(--yellow);
+}
+.our-team .box {
+  min-height: 96%;
+}
+.our-team .box h4 {
+  background-color: var(--green);
+}
+/* End our Team */
+/* Start Project */
+.project {
+  background-color: var(--dark);
+}
+/* End Project */
+/* Start Subscribe */
+.subscribe {
+  background-color: var(--yellow);
+}
+.subscribe input[type=email] {
+  border-bottom: 1px solid white !important;
+}
+.subscribe input[type=email]::-webkit-input-placeholder {
+  color: white;
+}
+.subscribe input[type=email]::-moz-placeholder {
+  color: white;
+}
+.subscribe input[type=email]:-ms-input-placeholder {
+  color: white;
+}
+.subscribe input[type=email]::-ms-input-placeholder {
+  color: white;
+}
+.subscribe input[type=email]::placeholder {
+  color: white;
+}
+.subscribe input[type=email]:focus {
+  outline: none;
+}
+.subscribe input[type=submit] {
+  background-color: var(--dark);
+  color: var(--yellow);
+}
+/* End Subscribe */
+/* Start Footer */
+footer {
+  background-color: var(--dark);
+}
+footer .copyright p:first-child span {
+  color: var(--green);
+}
+footer .copyright p:last-child span {
+  color: var(--yellow);
+}
+footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+footer .facebook {
+  background-color: #1877f2;
+}
+footer .twitter {
+  background-color: #1da1f2;
+}
+footer .linkedin {
+  background-color: #0077b5;
+}
+footer .youtube {
+  background-color: #ff0000;
+}
+/* End Footer */
